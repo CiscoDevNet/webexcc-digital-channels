@@ -17,7 +17,7 @@ Inside region specific folders, the following workflow templates are included :
     * Task Modified Workflow - This workflow will be triggered when an agent initiates a conversation transfer request or a conference request.
     * Close Task Workflow -  This workflow will be triggered when an agent or system ends a Task.
 
-## Quick start on Workflows
+## [Quick start on Workflows](https://help.imiconnect.io/docs/wxcc-flow-configuration-using-sample-templates)
 
 * `Follow the process for Organization setup in WxCC with IMI Integration.`
 * `Download the flows for the respective deployment data center.`
