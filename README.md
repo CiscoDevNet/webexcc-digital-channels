@@ -1,7 +1,7 @@
 # webexcc-digital-channels
 
 This repo provides the templates workflows for Webex Contact Center and IMI integration. These workflows 
-are versioned and specific to Webex Contact center deployment regions.
+are versioned and specific to Webex Contact Center deployment regions.
 
 ## Workflows Overview
 Inside region specific folders, the following workflow templates are included : 
