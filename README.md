@@ -17,13 +17,19 @@ Inside region specific folders, the following workflow templates are included :
     * Task Modified Workflow - This workflow will be triggered when an agent initiates a conversation transfer request or a conference request.
     * Close Task Workflow -  This workflow will be triggered when an agent or system ends a Task.
 
-## [Quick start on Workflows](https://help.imiconnect.io/docs/wxcc-flow-configuration-using-sample-templates)
+## Quick start on Workflows
 
-* `Follow the process for Organization setup in WxCC with IMI Integration.`
-* `Download the flows for the respective deployment data center.`
-* `Import the flows in your IMI connect service.`
-* `Add authorizations for the flow nodes.`
-* `Modify the flows as per your use case.`
-* `Make flows live with the configured assets.`
+* Follow the process for Organization setup in WxCC with IMI Integration
+* Download the flows for the respective deployment data center
+* Import the flows in your IMI connect service
+* Add authorizations for the flow nodes
+* Modify the flows as per your use case
+* Make flows live with the configured assets
 
-Details of this material is available at: [CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION](https://help.imiconnect.io/docs/wxcc-overview)
+Details of this material is available in IMI connect platform documentation.
+* Login to your IMI connect account
+* Click on `Documentation` under `Help` section
+* IMI connect platform documentation will open in a new tab
+* Under `GETTING STARTED` click on `imiconnect Platform Overview`
+* Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
+* Click on `Overview`
