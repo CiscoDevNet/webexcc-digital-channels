@@ -20,9 +20,9 @@ Inside region specific folders, the following workflow templates are included :
 ## Quick start on Workflows
 
 * Follow the process for Organization setup in WxCC with IMI Integration
-* Download the flows for the respective deployment data center
+* Download the flows template from the Repo
 * Import the flows in your IMI connect service
-* Add authorizations for the flow nodes
+* Add authorizations at integration level
 * Modify the flows as per your use case
 * Make flows live with the configured assets
 
