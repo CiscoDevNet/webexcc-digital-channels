@@ -1,7 +1,9 @@
 # webexcc-digital-channels
 
 This repo provides the templates workflows for Webex Contact Center and IMI integration. These workflows 
-are versioned and Webex Contact Center deployment region agnostic.
+are versioned and Webex Contact Center deployment **region agnostic**. In this new version of flows, the authentication mechanism is centralized and no need to configure it for every node of each flow.
+
+Earlier version of flows which are region specific. But it has  and some limitations on managing authentication at each node level.
 
 ## Workflows Overview
 The following workflow templates are included : 
