@@ -1,10 +1,10 @@
 # webexcc-digital-channels
 
 This repo provides the templates workflows for Webex Contact Center and IMI integration. These workflows 
-are versioned and specific to Webex Contact Center deployment regions.
+are versioned and Webex Contact Center deployment region agnostic.
 
 ## Workflows Overview
-Inside region specific folders, the following workflow templates are included : 
+The following workflow templates are included : 
 
 1. Media Specific Workflows : (Need to be updated once per asset of the specific channel) 
     * FBM Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the integrated Facebook page. 
