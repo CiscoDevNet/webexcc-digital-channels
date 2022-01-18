@@ -1,10 +1,12 @@
 # webexcc-digital-channels
 
 This repo provides the templates workflows for Webex Contact Center and IMI integration. These workflows 
-are versioned and specific to Webex Contact Center deployment regions.
+are versioned and Webex Contact Center deployment **region agnostic**. In this new version of flows, the authentication mechanism is centralized and no need to configure it for every node of each flow.
+
+Earlier version of flows which are region specific. But it has  and some limitations on managing authentication at each node level.
 
 ## Workflows Overview
-Inside region specific folders, the following workflow templates are included : 
+The following workflow templates are included : 
 
 1. Media Specific Workflows : (Need to be updated once per asset of the specific channel) 
     * FBM Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the integrated Facebook page. 
@@ -20,9 +22,9 @@ Inside region specific folders, the following workflow templates are included :
 ## Quick start on Workflows
 
 * Follow the process for Organization setup in WxCC with IMI Integration
-* Download the flows for the respective deployment data center
+* Download the flows template from the Repo
 * Import the flows in your IMI connect service
-* Add authorizations for the flow nodes
+* Add authorizations at integration level
 * Modify the flows as per your use case
 * Make flows live with the configured assets
 
