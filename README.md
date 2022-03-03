@@ -28,6 +28,8 @@ The following workflow templates are included :
 * Modify the flows as per your use case
 * Make flows live with the configured assets
 
+Note : Queue selection from queue task node is mandatory for any channel flows before making flow live.
+
 Details of this material is available in IMI connect platform documentation.
 * Login to your IMI connect account
 * Click on `Documentation` under `Help` section
@@ -36,9 +38,5 @@ Details of this material is available in IMI connect platform documentation.
 * Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
 * Click on `Overview`
 
-## AWS Ireland - Please follow the below mentioned point for Email and Whatsapp flow template for AWS Ireland region
-
-* Import Email or Whatsapp flow template
-* Access the first node Email event/ Whatsapp event
-* Select the dropdown and choose incoming message 
-* Save the node and make it live
+Note : For prod EU2 region please make sure you follow the below steps for email channel flow.
+* Import Email flow template and on start node explicity select event as incoming message before making flow live.  
