@@ -35,3 +35,10 @@ Details of this material is available in IMI connect platform documentation.
 * Under `GETTING STARTED` click on `imiconnect Platform Overview`
 * Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
 * Click on `Overview`
+
+## AWS Ireland - Please follow the below mentioned point for Email and Whatsapp flow template for AWS Ireland region
+
+* Import Email or Whatsapp flow template
+* Access the first node Email event/ Whatsapp event
+* Select the dropdown and choose incoming message 
+* Save the node and make it live
