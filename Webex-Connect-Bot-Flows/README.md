@@ -17,7 +17,7 @@ Pre-requisites
     * A publicly accessible google sheet and a sheet2api account that has access to your google sheet. Refer to sheet2api documentation on how to make requests to         your sheet
 You can choose to build a task bot flow for a different use-case that leverages certain other APIs or does not require fulfillment via external APIs at all. In those cases, you can remove the HTTP Request, Branch, and Data Parser nodes after the ‘Create task’ and before the ‘Task bot’ nodes. The Branch node after the Task bot node and the subsequent branches are also use-case dependent and will require modification depending on the bot’s use-case
 
-## Apart from this, you will require:
+Apart from this, you will require:
 
 1. A connect tenant with bot builder app, WxCC nodes, and Livechat channel enabled
 2.	A Facebook app in connect
