@@ -1,32 +1,28 @@
-# webexcc-digital-channels
+# Instructions for using bot flow templates
 
-This repo provides the templates workflows for Webex Contact Center and IMI Bot integration. These workflows 
-are versioned and Webex Contact Center deployment **region agnostic**. In this version of flows, the authorization mechanism is centralized and no need to configure it for every node of each flow.
- 
+## Q&A bot flow for Livechat channel
+Pre-requisites
+1.	A connect tenant with bot builder app, WxCC nodes, and Livechat channel enabled
+2.	A Livechat app in connect
+    * A website configuration in imiengage for the Livechat asset – this is required in the Create conversation node
+    * Pre-chat form template in connect if you want to use a pre-chat form. The nodes specific to gathering pre-chat form can be deleted from the flow if you choose       to not use a pre-chat form.
+3. Q&A bot in the bot builder
+    * A Q&A bot with desired articles should be created in the bot builder app. This will create an imibot integration in connect, which can then be selected from a       dropdown in the Q&A bot node.
+    * The Q&A bot should be trained and made live for the bot responses to reach the Livechat widget.
+    * Refer to imiconnect docs for a step-by-step guide on creating your first Q&A bot
 
-## Workflows Overview
-The following workflow templates are included : 
+## Task bot flow for Facebook channel
+Pre-requisites
+(Optional) This sample flow leverages a google sheet for fetching user info and adding user info to the said google sheet via sheet2api APIs. If you want to emulate this flow, you will need:
+    * A publicly accessible google sheet and a sheet2api account that has access to your google sheet. Refer to sheet2api documentation on how to make requests to         your sheet
+You can choose to build a task bot flow for a different use-case that leverages certain other APIs or does not require fulfillment via external APIs at all. In those cases, you can remove the HTTP Request, Branch, and Data Parser nodes after the ‘Create task’ and before the ‘Task bot’ nodes. The Branch node after the Task bot node and the subsequent branches are also use-case dependent and will require modification depending on the bot’s use-case
 
-1. Media Specific Workflows : (Need to be updated once per asset of the specific channel) 
-    * FBM Task Bot Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the integrated Facebook page. 
-    * Live Chat Q&A Bot Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the configured customer chat widget.
-    
+## Apart from this, you will require:
 
-## Quick start on Workflows
-
-* Follow the process for Organization setup in WxCC with IMI Integration
-* Download the flows template from the Repo
-* Import the flows in your IMI connect service
-* Add authorizations at integration level
-* Modify the flows as per your use case
-* Make flows live with the configured assets
-
-Details of this material is available in IMI connect platform documentation.
-* Login to your IMI connect account
-* Click on `Documentation` under `Help` section
-* IMI connect platform documentation will open in a new tab
-* Under `GETTING STARTED` click on `imiconnect Platform Overview`
-* Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
-* Click on `Overview`
-* The Q&A bot and Task bot should be trained and made live for the bot responses to reach the Livechat widget and Facebook page. Refer to imiconnect docs for a       step-by-step guide.
-
+1. A connect tenant with bot builder app, WxCC nodes, and Livechat channel enabled
+2.	A Facebook app in connect
+    * This will require a Facebook page with a ‘Send message’ button. Once you have your page ready, you can create a Facebook app in the ‘Apps’ screen in connect.       Refer to imiconnect documentation for step-by-step instructions
+3. Task bot in the bot builder
+    * A Task bot with desired intents and response template keys should be created in the bot builder app. This will create an imibot integration in connect, which       can then be selected from a dropdown in the Task bot node
+    * The Task bot should be trained and made live for the bot responses to reach the Facebook page
+    * Refer to imiconnect docs for a step-by-step guide on creating your first Task bot
