@@ -14,7 +14,9 @@ Pre-requisites
 ## Task bot flow for Facebook channel
 Pre-requisites
 (Optional) This sample flow leverages a google sheet for fetching user info and adding user info to the said google sheet via sheet2api APIs. If you want to emulate this flow, you will need:
-    * A publicly accessible google sheet and a sheet2api account that has access to your google sheet. Refer to sheet2api documentation on how to make requests to         your sheet
+
+1. A publicly accessible google sheet and a sheet2api account that has access to your google sheet. Refer to sheet2api documentation on how to make requests to         your sheet
+
 You can choose to build a task bot flow for a different use-case that leverages certain other APIs or does not require fulfillment via external APIs at all. In those cases, you can remove the HTTP Request, Branch, and Data Parser nodes after the ‘Create task’ and before the ‘Task bot’ nodes. The Branch node after the Task bot node and the subsequent branches are also use-case dependent and will require modification depending on the bot’s use-case
 
 Apart from this, you will require:
