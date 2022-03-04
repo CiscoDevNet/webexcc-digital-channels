@@ -28,5 +28,5 @@ Details of this material is available in IMI connect platform documentation.
 * Under `GETTING STARTED` click on `imiconnect Platform Overview`
 * Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
 * Click on `Overview`
-* The Q&A bot and Task bot should be trained and made live for the bot responses to reach the Livechat widget.Refer to imiconnect docs for a step-by-step guide.
+* The Q&A bot and Task bot should be trained and made live for the bot responses to reach the Livechat widget and Facebook page. Refer to imiconnect docs for a       step-by-step guide.
 
