@@ -38,5 +38,5 @@ Details of this material is available in IMI connect platform documentation.
 * Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
 * Click on `Overview`
 
-Note : For prod EU2 region please make sure you follow the below steps for email channel flow.
+Note : For Frankfurt/Ireland (prodeu2) region please make sure you follow the below steps for email channel flow.
 * Import Email flow template and on start node explicity select event as incoming message before making flow live.  
