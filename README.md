@@ -39,4 +39,6 @@ Details of this material is available in IMI connect platform documentation.
 * Click on `Overview`
 
 Note : For Frankfurt/Ireland (prodeu2) region please make sure you follow the below steps for email channel flow.
-* Import Email flow template and on start node explicity select event as incoming message before making flow live.  
+* Import Email flow template and on start node explicity select event as incoming message before making flow live. 
+
+## Latest flow templates are available in "Webex Connect Flow -> v2.0"  
