@@ -43,6 +43,6 @@ Note : For Frankfurt/Ireland (prodeu2) region please make sure you follow the be
 
 | Version | Description | History |
 | --- | ----------- | --------------
-| 2.0 | Channel agnostic flows | 22nd Apr |
-| 2.1 | With bug fixes | Bug fixes on whatsapp and facebook flows |
-| 2.1 | With bug fixes | Bug fixes on email flow for plain text mode |
+| 2.0 | Channel agnostic flows | 22-Apr-2022 |
+| 2.1 | With bug fixes on facebook and whatsapp flows | 22-Apr-2022 |
+| 2.1 | Bug fixe on handlling inbound event when email body with plain text without html content. Change done in evaluate node | 11-May-2022 |
