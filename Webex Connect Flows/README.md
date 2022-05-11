@@ -41,7 +41,8 @@ Details of this material is available in IMI connect platform documentation.
 Note : For Frankfurt/Ireland (prodeu2) region please make sure you follow the below steps for email channel flow.
 * Import Email flow template and on start node explicity select event as incoming message before making flow live.  
 
-| Version | Description |
-| --- | ----------- |
-| 2.0 | Channel agnostic flows |
-| 2.1 | With bug fixes |
+| Version | Description | History |
+| --- | ----------- | --------------
+| 2.0 | Channel agnostic flows | 22-Apr-2022 |
+| 2.1 | With bug fixes on facebook and whatsapp flows | 22-Apr-2022 |
+| 2.1 | Bug fixe on handlling inbound event when email body with plain text without html content. Change done in evaluate node | 11-May-2022 |
