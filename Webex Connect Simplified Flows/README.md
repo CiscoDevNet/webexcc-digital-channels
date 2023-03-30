@@ -1,6 +1,6 @@
 # webexcc-digital-channels
 
-This repo provides the simplified templates workflows for Webex Contact Center and IMI integration. 
+This repo provides the template workflows for Webex Contact Center and IMI integration. 
 
 ## Workflows Overview
 The following workflow templates are included : 
@@ -8,11 +8,11 @@ The following workflow templates are included :
 Any new nodes need to be added to the flow needing taskId or conversationId as an input can use the following pre-defined custom variables $(taskId) or $(conversationId) instead of $(node_id.taskId) or $(node_id.conversationId)
 
 1. Media Specific Workflows : These flows need to be imported once per asset of the specific channel.
-    * Facebook Simplified Flow - This workflow will be triggered for every inbound customer message over the integrated Facebook page. 
-    * Live Chat Simplified Flow - This workflow will be triggered for every inbound customer message over the configured customer chat widget.
-    * SMS Simplified Flow - This workflow will be triggered for every inbound customer sms sent over the integrated SMS phone number.
-    * Email Simplified Flow - This workflow will be triggered for every inbound customer email to the integrated email account.
-    * Whatsapp Simplified Flow - This workflow will be triggered for every inbound customer message over the integrated whatsapp business number.
+    * Facebook Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the integrated Facebook page. 
+    * Live Chat Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the configured customer chat widget.
+    * SMS Inbound Message Workflow - This workflow will be triggered for every inbound customer sms sent over the integrated SMS phone number.
+    * Email Inbound Message Workflow - This workflow will be triggered for every inbound customer email to the integrated email account.
+    * Whatsapp Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the integrated whatsapp business number.
     
 
 2. Media Agnostic Workflows : These flows need to be imported only * once per Organization and is applicable for all channels. If complex shared flows are already available in
