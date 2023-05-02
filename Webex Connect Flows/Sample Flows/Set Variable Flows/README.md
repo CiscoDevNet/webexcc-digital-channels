@@ -13,12 +13,12 @@ The folder includes the following sample flows for set variable :
   - The customer can also provide a short description of the issue.
   - These additional contextual details about the interaction are injected into the contact centre using the "Set Variable" Node. The sample flow gives an example of how to do that using the "Set Flow Variable" method in the "Set Variable" Node.
   - The Agent can view the injected details in the interaction panel of Agent Desktop.
-## Media Agnostic Workflow :
+## Media Agnostic Event Workflow :
 - ### Task Routed Workflow :  
   - The contextual information injected from the media-specific workflows is also available to the shared flow.
   - An "Evaluate" node can extract these details. The sample flow gives an example of how to do that.
 ## Quick Start on Workflows
-  1. Import the flows in your WebEx Connect Service.
+  1. Import the flows in your Webex Connect Service.
   2. Create a chat widget template like the one shown in this picture.<img width="1266" alt="Screenshot 2022-07-14 at 5 28 57 PM" src="https://user-images.githubusercontent.com/109220058/178982103-69f0fefe-d437-485e-b9ef-5355d034fab4.png">
  Use this template in the Form Template Field in the "Pre-chat form" and "Receive" Node.
   3. Select the appropriate queue in the "Queue Task" node for the channel. 

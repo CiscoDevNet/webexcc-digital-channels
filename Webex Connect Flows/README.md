@@ -14,9 +14,9 @@ The following workflow templates are included :
     * SMS Inbound Message Workflow - This workflow will be triggered for every inbound customer sms sent over the integrated SMS phone number.
     * Email Inbound Workflow - This workflow will be triggered for every inbound customer email to the integrated email account.    
     
-2. Media Agnostic Workflows : (Need to be impoted only once per Organization and is applicable for all channels)
+2. Media Agnostic Workflows : (These flows are imported only once per Organization and are applicable for all channels.)
     * Task Routed Workflow - This workflow will be triggered when an agent is assigned to a Task (typically after a Queue Task request and agent accepting the task).
-    * Task Modified Workflow - This workflow will be triggered when an agent initiates a conversation transfer request or a conference request.
+    * Task Modified Workflow - This workflow will be triggered when an agent transfers or conferences requests.
     * Close Task Workflow -  This workflow will be triggered when an agent or system ends a Task.
 
 ## Quick start on Workflows
@@ -42,7 +42,10 @@ Note : For Frankfurt/Ireland (prodeu2) region please make sure you follow the be
 * Import Email flow template and on start node explicity select event as incoming message before making flow live.  
 
 | Version | Description | History |
-| --- | ----------- | --------------
+| -- | ----------- | --------------
 | 2.0 | Channel agnostic flows - Deleted on 06-Jun-2022 | 22-Apr-2022 |
 | 2.1 | With bug fixes on facebook and whatsapp flows | 22-Apr-2022 |
 | 2.1 | Bug fixe on handlling inbound event when email body with plain text without html content. Change done in evaluate node | 11-May-2022 |
+| 3.0 | Contact center business logic in main and shared flows is simplified to ease the life of a flow admin. | 17-April-2023 |
+
+
