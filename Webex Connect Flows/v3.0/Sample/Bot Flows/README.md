@@ -5,7 +5,7 @@ Pre-requisites
 You must configure the following entities:
 1.	A Webex Connect tenant with bot builder app, WxCC nodes, and Livechat channel enabled
 2.	A Livechat app in connect
-      * A website configuration in Webex Engage for the Livechat asset – this is required in the Create Conversation node.
+      * A website configuration in Webex Engage for the Livechat asset.
       * Pre-chat form template in Webex Connect if you want to use a pre-chat form. The nodes specific to gathering pre-chat form can be deleted from the flow if you choose       to not use a pre-chat form.
 3. Q&A bot in the bot builder
     * A Q&A bot with desired articles should be created in the bot builder app. This will create an imibot integration in Webex Connect that can be selected from a dropdown in the Q&A bot node.
