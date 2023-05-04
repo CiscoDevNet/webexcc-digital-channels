@@ -3,15 +3,15 @@
 ## Q&A bot flow for Livechat channel
 Pre-requisites
 You must configure the following entities:
-1.	A Webex Connect tenant with bot builder app, WxCC nodes, and Livechat channel enabled
-2.	A Livechat app in connect
-      * A website configuration in Webex Engage for the Livechat asset.
+1. A Webex Connect tenant with bot builder app, WxCC nodes, and Livechat channel enabled
+2. A Livechat app in connect
       * Pre-chat form template in Webex Connect if you want to use a pre-chat form. The nodes specific to gathering pre-chat form can be deleted from the flow if you choose       to not use a pre-chat form.
 3. Q&A bot in the bot builder
     * A Q&A bot with desired articles should be created in the bot builder app. This will create an imibot integration in Webex Connect that can be selected from a dropdown in the Q&A bot node.
     * The Q&A bot should be trained and made live for the bot responses to reach the Livechat widget.
     * Refer to the Webex Connect documentation for steps to create your first Q&A bot.
       https://help.imiconnect.io/docs/qa-bots
+4. You must fill the appId and liveChatDomain in the Custom Variables section of flow .
 
 ## Q&A bot flow for SMS channel
 Pre-requisites
@@ -35,10 +35,11 @@ You can choose to build a task bot flow for a different use case that leverages 
 Apart from this, you will require:
 
 1. A Webex Connect tenant with bot builder app, WxCC nodes, and Facebook channel enabled
-2.	A Facebook app in connect
+2. A Facebook app in connect
     * This will require a Facebook page with a ‘Send message’ button. Once you have your page ready, you can create a Facebook app in the ‘Apps’ screen in connect. Refer to the Webex Connect documentation for more information.
 3. Task bot in the bot builder
     * A Task bot with desired intents and response template keys should be created in the bot builder app. This will create an imibot integration in connect that can be selected from a dropdown in the Task bot node.
     * The Task bot should be trained and made live for the bot responses to reach the Facebook page.
     * Refer to the Webex Connect documentation for steps to create your first Task bot - https://help.imiconnect.io/docs/task-bots.
 4. For more details on sheet2api APIs, refer to https://sheet2api.com/documentation
+5. You must fill the appId in the Custom Variables section of flow .
