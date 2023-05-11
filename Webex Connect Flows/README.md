@@ -1,48 +1,35 @@
 # webexcc-digital-channels
 
-This repo provides the templates workflows for Webex Contact Center and IMI integration. These workflows 
-are versioned and Webex Contact Center deployment **region agnostic**. In this new version of flows, the authentication mechanism is centralized and no need to configure it for every node of each flow.
+This repo provides the templates workflows and sample workflows for Webex Contact Center and IMI integration. These workflows 
+are versioned and Webex Contact Center deployment **region agnostic**. 
 
-Earlier version of flows which are region specific. But it has  and some limitations on managing authentication at each node level.
+## Digital Flows
+- Digital flows are configured in Webex Connect to drive the lifecycle of a digital contact.
+- Digital flows contain various nodes that enable you to configure success and error paths for the execution of customer interactions.
+- For Contact Center to function, some nodes need to be arranged in specific order, hence templates and samples are provided to depict the correct usage of the flows.
 
-## Workflows Overview
-The following workflow templates are included : 
+## 3.0 Workflows
+In 3.0 version of workflows we have simplified the flows to ease the lifecycle of a flow admin.
+v3.0 folder contains the following flows:-
+### Sample Flows:-
+#### Bot Flows:-
+- It contains three sample bot flows.
+- Facebook Task Bot Inbound Flow depicts the usage of a Task Bot. 
+- LiveChat and SMS Q&A bot Inbound Flow depicts the usage of a Q&A Bot.
 
-1. Media Specific Workflows : (Need to be updated once per asset of the specific channel) 
-    * FBM Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the integrated Facebook page. 
-    * Live Chat Inbound Message Workflow - This workflow will be triggered for every inbound customer message over the configured customer chat widget.
-    * SMS Inbound Message Workflow - This workflow will be triggered for every inbound customer sms sent over the integrated SMS phone number.
-    * Email Inbound Workflow - This workflow will be triggered for every inbound customer email to the integrated email account.    
-    
-2. Media Agnostic Workflows : (Need to be impoted only once per Organization and is applicable for all channels)
-    * Task Routed Workflow - This workflow will be triggered when an agent is assigned to a Task (typically after a Queue Task request and agent accepting the task).
-    * Task Modified Workflow - This workflow will be triggered when an agent initiates a conversation transfer request or a conference request.
-    * Close Task Workflow -  This workflow will be triggered when an agent or system ends a Task.
+#### Usage of PIQ And EWT In Flows:-
+- It demonstrates the usage of PIQ and EWT via Live Chat Inbound Sample Flow.
 
-## Quick start on Workflows
+#### Usage of Screen Pop In Flows:-
+- It demonstrates the usage of screen pop via Task Close Flow.
 
-* Follow the process for Organization setup in WxCC with IMI Integration
-* Download the flows template from the Repo
-* Import the flows in your IMI connect service
-* Add authorizations at integration level
-* Modify the flows as per your use case
-* Make flows live with the configured assets
+#### Usage of Set Variable in Flows:-
+- It demonstrates the usage of set variable via Live Chat Flow and Task Routed Sample Flow.
 
-Note : Queue selection from queue task node is mandatory for any channel flows before making flow live.
+### Template Flows:-
+#### Media Specific Flows:-
+- This folder contains media specific template flows. It contains Email Inbound Flow, Facebook Inbound Flow, Live Chat Close Flow, Live Chat Inbound Flow,
+  Live Chat Inbound Flow Without Form, Sms Inbound Flow, Whatsapp Inbound Flow.
 
-Details of this material is available in IMI connect platform documentation.
-* Login to your IMI connect account
-* Click on `Documentation` under `Help` section
-* IMI connect platform documentation will open in a new tab
-* Under `GETTING STARTED` click on `imiconnect Platform Overview`
-* Scroll down to `CISCO WEBEX CONTACT CENTER AND IMICONNECT INTEGRATION` section
-* Click on `Overview`
-
-Note : For Frankfurt/Ireland (prodeu2) region please make sure you follow the below steps for email channel flow.
-* Import Email flow template and on start node explicity select event as incoming message before making flow live.  
-
-| Version | Description | History |
-| --- | ----------- | --------------
-| 2.0 | Channel agnostic flows - Deleted on 06-Jun-2022 | 22-Apr-2022 |
-| 2.1 | With bug fixes on facebook and whatsapp flows | 22-Apr-2022 |
-| 2.1 | Bug fixe on handlling inbound event when email body with plain text without html content. Change done in evaluate node | 11-May-2022 |
+#### Event Handling Flows:-
+- This folder contains event handling template flows. It contains Task Close Flow, Task Modified Flow, Task Routed Flow.
