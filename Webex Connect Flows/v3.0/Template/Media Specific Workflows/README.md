@@ -61,6 +61,13 @@ be visible on the agent desktop.
 
   <br><img width="800" alt="Receive" src="../../images/Receive.png"><br>
 
+### Live Chat Close Flow Details
+- This flow is invoked when the live chat customer chooses to close the conversation by clicking on the "End chat" button in the chat widget.
+  <br><img width="800" alt="Live Chat Close flow Start node configuration" src="../../images/LiveChatCloseFlowStartNode.png"><br>
+- AliasId is taken in from the Search Conversation response and passed on to the Close Task node as the task identifier, to terminate the task in the backend.
+  <br><img width="800" alt="Close Task Node" src="../../images/CloseTaskNodeInLiveChatCloseFlow.png"><br>
+
+
 ## How to setup Workflows?
 
 * Follow the process for Organization setup in WxCC with IMI Integration.
