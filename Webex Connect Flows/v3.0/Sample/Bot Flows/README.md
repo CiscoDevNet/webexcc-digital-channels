@@ -11,7 +11,8 @@
     * A Q&A bot with desired articles should be created in the bot builder app. This will create an imibot integration in Webex Connect that can be selected from a dropdown in the Q&A bot node.
     * The Q&A bot should be trained and made live for the bot responses to reach the Livechat widget.
     * Refer to the Webex Connect documentation for steps to create your first Q&A bot.
-      https://help.imiconnect.io/docs/qa-bots
+      https://help.imiconnect.io/docs/qna-bots-quick-start-guide
+- Once the above entities are configured, the sample flow can be imported and Q&A bot node must be configured. Refer to the Webex Connect documentation for configuration of the bot node - https://help.imiconnect.io/docs/qa-bot-node
 
 ## Q&A bot flow for SMS channel
 - Pre-requisites
@@ -22,7 +23,9 @@
     * A Q&A bot with desired articles should be created in the bot builder app. This will create an imibot integration in Webex connect that can be selected from a dropdown in the Q&A bot node.
     * The Q&A bot should be trained and made live for the bot responses to reach the customer over sms channel.
     * Refer to the Webex Connect documentation for steps to create your first Q&A bot.
-      https://help.imiconnect.io/docs/qa-bots
+      https://help.imiconnect.io/docs/qna-bots-quick-start-guide
+- Once the above entities are configured, the sample flow can be imported and Q&A bot node must be configured. Refer to the Webex Connect documentation for configuration of the bot node - https://help.imiconnect.io/docs/qa-bot-node
+
 
 ## Task bot flow for Facebook channel
 - Pre-requisites
@@ -39,5 +42,6 @@ Apart from this, you will require:
 3. Task bot in the bot builder.
     * A Task bot with desired intents and response template keys should be created in the bot builder app. This will create an imibot integration in connect that can be selected from a dropdown in the Task bot node.
     * The Task bot should be trained and made live for the bot responses to reach the Facebook page.
-    * Refer to the Webex Connect documentation for steps to create your first Task bot - https://help.imiconnect.io/docs/task-bots.
+    * Refer to the Webex Connect documentation for steps to create your first Task bot - https://help.imiconnect.io/docs/task-bots-quick-start-guide.
 4. For more details on sheet2api APIs, refer to https://sheet2api.com/documentation
+- Once the above entities are configured, the sample flow can be imported and Task bot node must be configured. Refer to the Webex Connect documentation for configuration of the bot node - https://help.imiconnect.io/docs/task-bot-node
