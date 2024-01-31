@@ -67,6 +67,15 @@ be visible on the agent desktop.
 - AliasId is taken in from the Search Conversation response and passed on to the Close Task node as the task identifier, to terminate the task in the backend.
   <br><img width="800" alt="Close Task Node" src="../../images/CloseTaskNodeInLiveChatCloseFlow.png"><br>
 
+## Enhancements Included
+- Chat
+  - Support for displaying customer name and emailId if available via form, on the Agent's Desktop 
+- Email
+  - Support for emails sent without subject
+  - Support for emails sent without sender name
+  - Support for plain text emails
+- Bot flows
+  - Updated to ensure flows get imported without any errors
 
 ## How to setup Workflows?
 
