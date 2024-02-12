@@ -49,7 +49,8 @@ In 3.1 version of workflows, the flows are enhanced with Security scan results t
 
 ## Version History
 
-| Workflows version | High level Description                      |
-| ----------------- | ------------------------------------------- |
-| 3.1               | Simplified flows with Security scan results |
-| 3.0               | Simplified flows                            |
+| Workflows version | High level Description                                                                                                                                                                                                                                 |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 3.2               | Flow nodes have been updated to enable setting contact priority and facilitate the delivery of system messages such as survey links and survey messages to customers.                                                                                  |
+| 3.1               | The malware scanning feature has been integrated into all attachments sent across various channels. The channel start nodes have been improved to include a new set of variables for identifying malware and presenting security scan results.         |
+| 3.0               | The 2.x flows undergone a major update in 3.0 where the contact center specific logic that used to be a part of flow got replaced with the Resolve Conversation node. Shared flows like Task Routed, Task Modified and Task Closed are also simplified. |
