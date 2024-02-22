@@ -36,6 +36,12 @@ In 3.2 version of workflows, enhancements to the flows allow for setting contact
 #### Usage of Set Variable in Flows:-
 - It demonstrates the usage of set variable via Live Chat Sample Flow.
 
+#### Usage of Survey in Flows:-
+- It demonstrates the usage of survey via Live Chat Close Flow and Facebook Close flow.
+
+#### Usage of Contact Priority in Flows:-
+- It demonstrates the usage of contact priority via Email Flow.
+
 ### Template Flows:-
 
 #### Media Specific Flows:-
@@ -44,8 +50,8 @@ In 3.2 version of workflows, enhancements to the flows allow for setting contact
 #### Event Handling Flows:-
 - This folder contains event handling template flows. It contains Task Close Flow, Task Modified Flow, Task Routed Flow.
 
-### Steps to perform Manual Upgrade from v3.0 to v3.1
-- As described in file `Webex Connect Flows/How to manually upgrade from v3.0 to v3.1 workflows.MD`
+### Steps to perform Manual Upgrade from v3.1 to v3.2
+- As described in file `Webex Connect Flows/How to manually upgrade from v3.1 to v3.2 workflows.MD`
 
 ## Version History
 
