@@ -8,14 +8,14 @@ are versioned and Webex Contact Center deployment **region agnostic**.
 - Digital flows contain various nodes that enable you to configure success and error paths for the execution of customer interactions.
 - For Contact Center to function, certain nodes need to be arranged in specific order, hence templates and samples are provided to depict the correct usage of the flows.
 
-## 3.1 Workflows
-In 3.1 version of workflows, the flows are enhanced with Security scan results that are passed on to the backend to further protect your contact centre against malware content coming in via attachments in messages.
+## 3.2 Workflows
+In 3.2 version of workflows, enhancements to the flows allow for setting contact priority and facilitating the delivery of system messages, including survey links and messages, to customers.
 
-### Updates available in 3.1 Workflows
+### Updates available in 3.2 Workflows
 - Support for:
-  - Utilising PCI, Malware and Security scan results
-  - Receiving emails without sender name / subject
-  - Plain text emails
+  - Receiving a survey once the agent ends the interaction.
+  - Queue the contact based on priority.
+  - Receiving emails from flows with the asset email as the sender's address.
 
 ### Sample Flows:-
 
