@@ -8,14 +8,8 @@ are versioned and Webex Contact Center deployment **region agnostic**.
 - Digital flows contain various nodes that enable you to configure success and error paths for the execution of customer interactions.
 - For Contact Center to function, certain nodes need to be arranged in specific order, hence templates and samples are provided to depict the correct usage of the flows.
 
-## 3.2 Workflows
-In 3.2 version of workflows, enhancements to the flows allow for setting contact priority and facilitating the delivery of system messages, including survey links and messages, to customers.
-
-### Updates available in 3.2 Workflows
-- Support for:
-  - Receiving a survey once the agent ends the interaction.
-  - Queue the contact based on priority.
-  - Receiving emails from flows with the asset email as the sender's address.
+## 3.3 Workflows
+In 3.3 version of workflows, support for Apple Business Messages as a channel has been provided.
 
 ### Sample Flows:-
 
@@ -42,6 +36,11 @@ In 3.2 version of workflows, enhancements to the flows allow for setting contact
 #### Usage of Contact Priority in Flows:-
 - It demonstrates the usage of contact priority via Email Flow.
 
+#### Apple Business Messages Sample Flows
+- Contains sample flows to demonstrate usage of
+  - Rich Message features supported by Apple such as Time picker, List picker etc. 
+  - Group Id and Intent Id  
+
 ### Template Flows:-
 
 #### Media Specific Flows:-
@@ -50,13 +49,6 @@ In 3.2 version of workflows, enhancements to the flows allow for setting contact
 #### Event Handling Flows:-
 - This folder contains event handling template flows. It contains Task Close Flow, Task Modified Flow, Task Routed Flow.
 
-### Steps to perform Manual Upgrade from v3.1 to v3.2
-- As described in file `Webex Connect Flows/How to manually upgrade from v3.1 to v3.2 workflows.MD`
+### Steps to perform Manual Upgrade from v3.2 to v3.3
+- As described in file `Webex Connect Flows/How to manually upgrade from v3.2 to v3.3 workflows.MD`
 
-## Version History
-
-| Workflows version | High level Description                                                                                                                                                                                                                                 |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3.2               | Flow nodes have been updated to enable setting contact priority and facilitate the delivery of system messages such as survey links and survey messages to customers.                                                                                  |
-| 3.1               | The malware scanning feature has been integrated into all attachments sent across various channels. The channel start nodes have been improved to include a new set of variables for identifying malware and presenting security scan results.         |
-| 3.0               | The 2.x flows undergone a major update in 3.0 where the contact center specific logic that used to be a part of flow got replaced with the Resolve Conversation node. Shared flows like Task Routed, Task Modified and Task Closed are also simplified. |
