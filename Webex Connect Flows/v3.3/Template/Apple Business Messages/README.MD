@@ -1,0 +1,81 @@
+# Overview of Apple template flows
+
+- This document covers the purpose and configuration details for the below template flows for Apple channel
+  - Inbound flow with form
+  - Unsubscribe flow
+
+## Overview of Apple inbound flow with form
+
+- This workflow will be triggered for every inbound customer message from the Apple Messages app.
+- The customer will be presented with a form asking for some basic details.
+- The fields in the form can be reconfigured by the flow admin as per his/her requirements.
+- The fields obtained from the form are extracted by using the Evaluate node and then made available to the agent by setting global/flow variables, using the Set Variable node.
+- Forms are supported only on iPhones and iPads by Apple, Mac devices do not have support.
+- Note: The chat widget on the agent's desktop will show the customer's name as was available the first time a message was sent from that customer to the business's asset.
+  - If the customer's name is unavailable the first time the customer messages the asset, fallback name can be updated in the flows by updating the `defaultCustomerName` variable.
+  - If `defaultCustomerName` is not available or empty, a substring of the customer's userId will be used in its place.
+
+### Configuring the Apple flow with a form
+
+#### Step 1: Setting up the form in the Apple Messages for Business node
+
+- Choose the message type as "Form Message"
+- In the form elements field, supply the json for the form configuration
+- In the sample flow, name, gender and email address are the fields presented in the form.
+- The fields in the form can be reconfigured by the flow admin as per his/her requirements, using [this documentation](https://register.apple.com/resources/messages/msp-rest-api/type-interactive#form-message) for reference.
+- Using the sample payload in the flow and in the above documentation, one can prepare the JSON according to their needs and supply it in the node.
+- Other optional fields in the node can be configured if needed.
+
+#### Step 2: Receiving the form response via the Receive node
+
+![AppleFormReceiveNode.png](../../images/AppleFormReceiveNode.png)
+- Set a reasonable timeout for the node based on how long one might take to fill the form configured
+- Select "Receive Apple Messages for Business" as the event
+- Configure the "From" field as ```$(<nodeId>.abc.abcUserId)```
+- Select the "Event name" as "Interactivemessageresponse: FormMessage"
+
+#### Step 3: Adding the form response to the conversation history using the Append Conversation node
+
+- In the Append Conversation node, select "Single Message"
+- Select "Message Type" as "AMB Form Response"
+- Set "Form response" as ???
+- Set "Timestamp" as ```$(<nodeId>.abc.timestamp)```
+
+#### Step 4: Extracting the values in the form via the Evaluate Node
+
+![AppleFormEvalNode.png](../../images/AppleFormEvalNode.png)
+- In this sample flow, the 3 fields presented in the form are being extracted in the Evaluate node with the below script. Similar script can be developed to extract any other fields configured by the flow admin
+- Update if required ???
+- Add the below lines to the beginning of the script:
+    ```
+    if (formResponse !== null && formResponse !== "") {
+        var responseJson = JSON.parse(formResponse);
+
+        for (i = 0; i < responseJson.length; i++) {
+            if (responseJson[i].pageIdentifier == "name" && responseJson[i].items[0].value !== "" && responseJson[i].items[0].value !== null)
+                var customerName = responseJson[i].items[0].value;
+            else if (responseJson[i].pageIdentifier == "emailAddress" && responseJson[i].items[0].value !== "" && responseJson[i].items[0].value !== null)
+                var customerEmail = responseJson[i].items[0].value;
+            else if (responseJson[i].pageIdentifier == "gender")
+                var gender = responseJson[i].items[0].value;
+        }
+    }
+    ```
+
+#### Further steps
+
+![AppleFormFlowOverview.png](../../images/AppleFormFlowOverview.png)
+- Rest of the flow continues as usual, Resolving the conversation, Queuing the task and so on
+- Optionally, the flow admin can choose to set variables for the fields extracted from the form and make them visible to / editable by the agent, using the Set Variable node. For further details on how to use this node, refer here - Webex Connect Flows/Sample/Usage of Set Variable In Flows/README.md
+- Note: If the customer name is made available through the form, the contact origin will be set as the name itself. This will be visible on the Agent's desktop and in reports as well. If the customer's name is not available, the userId will be used as the origin.
+
+
+
+
+## Overview of Apple unsubscribe flow
+
+- This workflow will be triggered whenever a customer unsubscribes from the business's messages.
+- This flow takes care of closing the task associated with the conversation.
+- Once the customer has chosen to unsubscribe, the business cannot send messages to the customer via the agent or the flow until he messages the business.
+- Hence, this flow can be modified to perform any post contact treatments if needed (API calls, DB dips etc.), but any attempt to contact the customer will fail.
+- If no such treatments are needed, this flow can be used as is.
