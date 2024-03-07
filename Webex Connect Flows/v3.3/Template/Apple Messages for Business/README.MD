@@ -4,6 +4,14 @@
   - Inbound flow with form
   - Unsubscribe flow
 
+## Overview of Apple Messages for Business inbound flow
+
+- This workflow will be triggered for every inbound customer message from the Apple Messages app.
+- In addition to basic steps such as resolving a conversation and queuing it, this flow also has logic required to receive a message from the customer via a Receive node, process the attachments via an Evaluate node, and append it to the conversation via an Append Conversation node
+    - ![Receive Eval and Append Nodes](../../images/AppleReceiveAndAppend.png)
+    - This can be repeated wherever such a need arises, to accept messages from the customer via a Receive node in between a flow instead of a Start node at the beginning of a flow, and then to append it to the conversation
+    - The Receive, Evaluate and Append Nodes described here and in the screenshot above can be removed if not needed as they are optional.
+
 ## Overview of Apple Messages for Business inbound flow with form
 
 - This workflow will be triggered for every inbound customer message from the Apple Messages app.
@@ -12,7 +20,7 @@
 - The fields obtained from the form are extracted by using the Evaluate node and then made available to the agent by setting global/flow variables, using the Set Variable node.
 - Forms are supported only on iPhones and iPads by Apple, Mac devices do not have support.
   - https://register.apple.com/resources/messages/msp-rest-api/type-interactive#form-message
-- Note: The chat widget on the agent's desktop will show the customer's name as was available the first time a message was sent from that customer to the business's asset.
+- Note: The chat widget on the agent's desktop will show the customer's name as supplied (via form) the first time a message was sent from that customer to the business's asset.
   - If the customer's name is unavailable the first time the customer messages the asset, fallback name can be updated in the flows by updating the `defaultCustomerName` variable.
   - If `defaultCustomerName` is not available or empty, a substring of the customer's userId will be used in its place.
 

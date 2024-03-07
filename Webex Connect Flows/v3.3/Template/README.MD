@@ -47,11 +47,6 @@ Flow Variables that need to be updated under Custom Variables for different chan
 Details of this material is available in Webex Connect platform documentation.
 * Login to your Webex Connect account.
 * Click `Documentation` under `Help` section.
-* Click on `Documentation` under `Help` section.
 * Webex Connect platform documentation will open in a new tab.
-* Webex Connect platform documentation will open in a new tab.
-* Under `Getting Started`, click `Webex Connect Platform Overview`.
-* Under `GETTING STARTED` click on `Webex Connect Platform Overview`.
-* Scroll down to the `Webex Contact Center and Webex Connect Integration` section.
-* Scroll down to `CISCO WEBEX CONTACT CENTER AND Webex CONNECT INTEGRATION` section.
+* Scroll down in the left pane and locate the `CISCO WEBEX CONTACT CENTER & WEBEX CONNECT INTEGRATION` section.
 * Click `Overview`.
