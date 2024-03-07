@@ -22,7 +22,7 @@
 
 - Choose the message type as "Form Message"
 - In the form elements field, supply the json for the form configuration
-- In the sample flow, name, gender and email address are the fields presented in the form.
+- In the sample flow, name, defectiveProduct and email address are the fields presented in the form.
 - The fields in the form can be reconfigured by the flow admin as per their requirements, using [this documentation](https://register.apple.com/resources/messages/msp-rest-api/type-interactive#form-message) for reference.
 - Using the sample payload in the flow and in the above documentation, one can prepare the JSON according to their needs and supply it in the node.
 - Other optional fields in the node can be configured if needed.
@@ -32,21 +32,20 @@
 ![AppleFormReceiveNode.png](../../images/AppleFormReceiveNode.png)
 - Set a reasonable timeout for the node based on how long one might take to fill the form configured
 - Select "Receive Apple Messages for Business" as the event
-- Configure the "From" field as ```$(<nodeId>.abc.abcUserId)```
+- Configure the "From" field as ```$(<startNodeId>.abc.abcUserId)```
 - Select the "Event name" as "Interactivemessageresponse: FormMessage"
 
 #### Step 3: Adding the form response to the conversation history using the Append Conversation node
 
 - In the Append Conversation node, select "Single Message"
 - Select "Message Type" as "AMB Form Response"
-- Set "Form response" as ???
-- Set "Timestamp" as ```$(<nodeId>.abc.timestamp)```
+- Set "Form response" as $(<receiveNodeId>.receive.payload)
+- Set "Timestamp" as ```$(<receiveNodeId>.abc.timestamp)```
 
 #### Step 4: Extracting the values in the form via the Evaluate Node
 
 ![AppleFormEvalNode.png](../../images/AppleFormEvalNode.png)
 - In this sample flow, the 3 fields presented in the form are being extracted in the Evaluate node with the below script. Similar script can be developed to extract any other fields configured by the flow admin
-- Update if required ???
 - Add the below lines to the beginning of the script:
     ```
     if (formResponse !== null && formResponse !== "") {
@@ -57,8 +56,8 @@
                 var customerName = responseJson[i].items[0].value;
             else if (responseJson[i].pageIdentifier == "emailAddress" && responseJson[i].items[0].value !== "" && responseJson[i].items[0].value !== null)
                 var customerEmail = responseJson[i].items[0].value;
-            else if (responseJson[i].pageIdentifier == "gender")
-                var gender = responseJson[i].items[0].value;
+            else if (responseJson[i].pageIdentifier == "defectiveProduct")
+                var defectiveProduct = responseJson[i].items[0].value;
         }
     }
     ```

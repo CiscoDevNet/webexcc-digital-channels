@@ -1,4 +1,4 @@
-# Overview of Rich Message responses supported
+# Overview of Sample flows to handle responses sent to Agent initiated Rich Messages
 
 - The flows enclosed in this folder serve as templates for the below supported Rich Message responses sent by the customer to the business:
     - Time picker response
