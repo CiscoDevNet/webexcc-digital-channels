@@ -5,7 +5,8 @@
   - List picker
 - These flows can be used as reference to send out rich messages to the customer for automated / bot scenarios.
 - Ensure that the `request identifier` field is set to a static string, such as `system`, if rich message response flows are also made live.
-  - ![AppleSetReqId.png.png](../../images/AppleSetReqId.png.png)
+  - ![AppleSetReqId](../../../images/AppleSetReqId.png)
   - Refer to the README in Rich Message Response Flows to understand how to use the request identifier set here.
 - Further details about each of these rich message features can be found on Apple's documentation
 - https://register.apple.com/resources/messages/messaging-documentation/customer-journey#interactive-features
+

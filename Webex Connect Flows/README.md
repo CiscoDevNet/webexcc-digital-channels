@@ -39,7 +39,7 @@ In 3.3 version of workflows, support for Apple Business Messages as a channel ha
 #### Apple Business Messages Sample Flows
 - Contains sample flows to demonstrate usage of
   - Rich Message features supported by Apple such as Time picker, List picker etc. 
-  - Group Id and Intent Id  
+  - Routing based on entrypoint parameters i.e. intentID and groupID  
 
 ### Template Flows:-
 
