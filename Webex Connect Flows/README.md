@@ -9,7 +9,7 @@ are versioned and Webex Contact Center deployment **region agnostic**.
 - For Contact Center to function, certain nodes need to be arranged in specific order, hence templates and samples are provided to depict the correct usage of the flows.
 
 ## 3.3 Workflows
-In 3.3 version of workflows, support for Apple Business Messages as a channel has been provided.
+In 3.3 version of workflows, support for Apple Messages for Business as a channel has been provided.
 
 ### Sample Flows:-
 
