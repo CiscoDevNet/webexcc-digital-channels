@@ -1,6 +1,7 @@
 # Overview of Apple Messages for Business template flows
 
 - This document covers the purpose and configuration details for the below template flows for Apple channel
+  - Basic Inbound flow 
   - Inbound flow with form
   - Unsubscribe flow
 
