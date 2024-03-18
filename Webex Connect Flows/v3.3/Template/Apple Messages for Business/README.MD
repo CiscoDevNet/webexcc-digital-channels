@@ -80,6 +80,8 @@
 
 ## Overview of Apple Messages for Business unsubscribe flow
 
+![AppleUnsubscribeFlow.png](../../images/AppleUnsubscribeFlow.png)
+
 - This workflow will be triggered whenever a customer unsubscribes from the business's messages.
 - This flow takes care of closing the task associated with the conversation.
 - Once the customer has chosen to unsubscribe, the business cannot send messages to the customer via the agent or the flow until the customer messages the business.
