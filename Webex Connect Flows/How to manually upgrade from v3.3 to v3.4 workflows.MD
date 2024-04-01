@@ -1,5 +1,5 @@
 
-# How to manually upgrade from v3.1 to v3.2 workflows
+# How to manually upgrade from v3.3 to v3.4 workflows
 
 In case you have made custom changes to your inbound flows, you can manually upgrade your existing v3.3 flows to v3.4. This ensures that the custom changes are retained and don't have to be repeated. Follow the below steps for the same:
 
