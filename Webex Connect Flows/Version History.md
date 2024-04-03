@@ -13,7 +13,6 @@
 ##v3.2
 ####Features released:
 - Option to set contact priority while queueing contacts
-- Capability to deliver system messages such as survey links and survey messages to customers post contact handling
   ####Minor updates:
 - Support for receiving emails from flows with the asset's email as the sender's address
 
