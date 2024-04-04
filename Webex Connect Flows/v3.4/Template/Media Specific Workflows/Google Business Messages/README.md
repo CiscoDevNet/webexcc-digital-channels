@@ -39,7 +39,7 @@
 #### To be Noted 
 - In the first phase of GBM integration with WxCC only `Incoming Message` is supported from the GBM start node 
   ![GBMStartNode](../../../images/GBMStartNode.png)
-- The `gbm.conversationId` variables from gbm specific nodes are different from the conversationId variable from Search Conversation response and cannot be used interchangeably
+- The `gbm.conversationId` variables from gbm specific nodes are different from the conversationId variable from Search Conversation response and cannot be used interchangeably. `gbm.conversationId` is a UUID value while the Search Conversation Response is a string value
 - Before publishing the flow Resolve Conversation node needs to be updated with flow id. Flow id can be obtained from the address bar. For example flow id (41896) can be obtained from the url https://testorg.datacenter.webexconnect.io/flowdesigner/flow/v3/flowView?flowId=41896
 
 #### Further Readings
