@@ -10,7 +10,7 @@
 - This workflow will be triggered for every inbound customer message from the Google Business Messages Asset.
 - This flow contains the basic steps to resolve a conversation and queuing it, when a message is received on the Google Business Messages Asset 
     ![GBMInboundFlow](../../../images/GBMInboundFlow.jpeg)
-- Google Business Messages can be used to send Text Messages, Images, Rich Cards, and Carousel Cards to your end customers.
+- GBM Nodes can be used to send Text Messages, Images, Rich Cards, and Carousel Cards to your end customers.
 ## Inbound flow with suggestions
 
 - This workflow will be triggered for every inbound customer message from the Google Business Messages Asset.
@@ -39,7 +39,7 @@
 #### To be Noted 
 - In the first phase of GBM integration with WxCC only `Incoming Message` is supported from the GBM start node 
   ![GBMStartNode](../../../images/GBMStartNode.png)
-- The `gbm.conversationId` variables from gbm specific nodes are different from the conversationId variable from Search Conversation response and cannot be used interchangeably. `gbm.conversationId` is a UUID value while the Search Conversation Response is a string value
+- The `gbm.conversationId` variables from gbm specific nodes are different from the conversationId variable from Search Conversation response and cannot be used interchangeably. `gbm.conversationId` is google's unique identifier for a customer and conversationId from Search Conversation is a WxCC Conversation Nodes's  unique identifier for a customer like it is for other channels.
 - Before publishing the flow Resolve Conversation node needs to be updated with flow id. Flow id can be obtained from the address bar. For example flow id (41896) can be obtained from the url https://testorg.datacenter.webexconnect.io/flowdesigner/flow/v3/flowView?flowId=41896
 
 #### Further Readings
