@@ -13,7 +13,7 @@
 ## v3.2
 #### Features released:
 - Option to set contact priority while queueing contacts
-  ####Minor updates:
+  #### Minor updates:
 - Support for receiving emails from flows with the asset's email as the sender's address
 
 ## v3.1
