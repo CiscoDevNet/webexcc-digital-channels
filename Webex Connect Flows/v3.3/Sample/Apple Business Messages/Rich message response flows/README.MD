@@ -1,0 +1,21 @@
+# Overview of Sample flows to handle responses sent to Agent initiated Rich Messages
+
+- The flows enclosed in this folder serve as templates for the below supported Rich Message responses sent by the customer to the business:
+    - Time picker response
+    - List picker response
+    - Form response
+    - iMessage App 
+- These flows are required only if the business needs to support use cases where the agent sends out rich messages, to which the customer responds
+  - If only responses to rich messages sent by flows need to be handled, these flows need not be imported.
+- For proper functioning of these flows (all except iMessage App), follow the below steps:
+  - ![AppleUseReqId](../../../images/AppleUseReqId.png)
+  - Any rich messages sent out via flows need to set the request identifier to a static string, say `system`
+    - ![AppleSetReqId](../../../images/AppleSetReqId.png)
+  - All flows in this folder, i.e. rich message response flows need to have an invocation condition set up in the start node to ensure that they get triggered only when the request identifier is not `system`. This will ensure that these flows get executed only when the customers respond to rich messages sent out by the agent
+  - If there are no rich messages sent out by flows, the invocation condition need not be set
+- For proper functioning of the iMessage App flow, follow the below steps:
+  - In addition to this flow (F1), if you also have an inbound flow (F2) which sends an iMessage App to the customer and receives the response via a Receive node within the same flow, follow the below steps 
+  - Configure the invocation condition in the start node to ensure that F1 gets triggered only when the `bid` is not the same as the `bid` in F2
+  - The sample has been provided to append the url of the iMessage App to the conversation, to make it viewable for the agent. Different iMessage Apps might have different kind of data available. The flow designer can modify this flow to use the data according to the business' needs
+- Further details about each of these features can be found on Apple's documentation
+    - https://register.apple.com/resources/messages/messaging-documentation/customer-journey#interactive-features

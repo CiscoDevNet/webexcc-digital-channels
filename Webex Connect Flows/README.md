@@ -9,11 +9,12 @@ are versioned and Webex Contact Center deployment **region agnostic**.
 - For Contact Center to function, certain nodes need to be arranged in specific order, hence templates and samples are provided to depict the correct usage of the flows.
 
 ## 3.3 Workflows
-In version 3.3 of workflows, enhancements to the flows allow for facilitating the delivery of system messages, including survey links and messages, to customers
+In version 3.3 of workflows, enhancements to the flows allow for facilitating the delivery of system messages, including survey links and messages to customers
 
 ### Updates available in 3.3 Workflows
 - Support for:
   - Receiving a survey once the agent ends the interaction
+  - Apple Messages for Business as a channel has been provided.
 
 ### Sample Flows:-
 
@@ -39,6 +40,11 @@ In version 3.3 of workflows, enhancements to the flows allow for facilitating th
 
 #### Usage of Survey in Flows:-
 - It demonstrates the usage of survey via Live Chat Close Flow and Facebook Close flow.
+
+#### Apple Business Messages Sample Flows
+- Contains sample flows to demonstrate usage of
+  - Rich Message features supported by Apple such as Time picker, List picker etc.
+  - Routing based on entrypoint parameters i.e. intentID and groupID
 
 ### Template Flows:-
 

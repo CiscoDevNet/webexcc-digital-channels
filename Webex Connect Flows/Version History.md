@@ -3,6 +3,8 @@
 ## v3.3
 #### Features released:
 - Capability to deliver system messages such as survey links and survey messages to customers post contact handling
+- Apple Business Messages
+  - Support for Apple Business Messages as a channel
 
 ## v3.2
 #### Features released:

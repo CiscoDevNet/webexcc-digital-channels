@@ -10,7 +10,9 @@ The following workflow templates are included :
 * **SMS Inbound Flow** - This workflow will be triggered for every inbound customer sms sent over the integrated SMS phone number.
 * **Email Inbound Flow** - This workflow will be triggered for every inbound customer email to the integrated email account.
 * **Whatsapp Inbound Flow** - This workflow will be triggered for every inbound customer message over the integrated whatsapp business number.
+* **Apple Messages For Business Inbound Flow** - This workflow will be triggered for every inbound customer message over the integrated apple business account.
 * **Live Chat Close Flow** - This workflow will be triggered when a livechat customer has ended the chat.
+
 
 Note : 
 - Queue selection from queue task node is mandatory for any channel flows before making the flow live.
@@ -21,19 +23,19 @@ Note :
 Flow Variables that need to be updated under Custom Variables for different channels: -
 - LiveChat :- appId and liveChatDomain
 
-  <br><img width="800" alt="Settings" src="../../images/Settings.png"><br>
+  ![Live chat Settings](../../images/Settings.png)
 
 - Facebook :- FBpageid and appid
 
-  <br><img width="800" alt="Facebook Settings" src="../../images/Facebook.png"><br>
+  ![Facebook Settings](../../images/Facebook.png)
   
 - Whatsapp :- WANumber and appid
 
-  <br><img width="800" alt="Whatsapp Settings" src="../../images/Whatsapp.png"><br>
+  ![Whatsapp Settings](../../images/Whatsapp.png)
 
 - Email    :- bizemailid
 
-  <br><img width="800" alt="Email" src="../../images/Email.png"><br>
+  ![Email Settings](../../images/Email.png)
 
 ### Live Chat Inbound Flow Details
 - In the Live Chat Flow, we need to select the template. For creation of template refer to https://help.imiconnect.io/docs/livechat-template
