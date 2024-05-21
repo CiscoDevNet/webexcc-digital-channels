@@ -12,6 +12,9 @@
     - ![Receive Eval and Append Nodes](../../../images/AppleReceiveAndAppend.png)
     - This can be repeated wherever such a need arises, to accept messages from the customer via a Receive node in between a flow instead of a Start node at the beginning of a flow, and then to append it to the conversation
     - The Receive, Evaluate and Append Nodes described here and in the screenshot above can be removed if not needed as they are optional.
+    - Note: When using the Append Conversation node for apple, make sure that you specify the `Extras` field with the `capabilityList` value from the receive node. This is needed to pass the capability list information of the customer device to the agent.
+      - ![Append Conversation Node](../../../images/AppleAppendConversationNode.png)
+      - For further information on capabilityList please refer [this documentation](https://register.apple.com/resources/messages/msp-rest-api/channel-settings#device-capabilities)
 
 ## Overview of Apple Messages for Business inbound flow with form
 
