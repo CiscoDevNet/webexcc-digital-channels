@@ -32,9 +32,8 @@ If you are using the Default Desktop Layout.json file without any modification, 
 
 
 
-## Agent Initiated Outbound  Desktop Layout
-
-A Custom Layout is attached [here.](DigitalOutboundDesktopLayout.json) This can be used as-is and configured for for one or more teams to provide the agents access to Digital Outbound Widget. This layout is built on top of the Default Desktop Layout.json.
+## Agent Initiated Outbound Desktop Layout
+The `Agent Initiated Digital Outbound widget` is not part of the Default Desktop Layout, hence a Custom Desktop Layout is attached [here.](DigitalOutboundDesktopLayout.json) This can be used as-is and configured for for one or more teams to provide the agents access to Digital Outbound Widget. This layout is built on top of the Default Desktop Layout.json.
 
 ## Steps to Configure Agent Initiated Outbound  Desktop Layout
 
@@ -50,7 +49,11 @@ A Custom Layout is attached [here.](DigitalOutboundDesktopLayout.json) This can 
    - Under the `JSON File` section choose the option `replace file` and choose the custom Desktop Layout created.
    - Click the option `Create` to apply the Desktop Layout.
      <br><img width="800" alt="Settings" src="images/Layout Details Section.png"><br>
-
+5) Once the Desktop Layout is created, login to the agent desktop or refresh the same if already logged in to see the `Digital Outbound Widget.`
+   - Sms Digital Outbound Widget
+   <br><img width="800" alt="Settings" src="images/Sms Outbound Widget.png"><br>
+   - Email Digital Outbound Widget
+   <br><img width="800" alt="Settings" src="images/Email Outbound Widget.png"><br>
      
 ## Steps to Configure Desktop Layout if Custom Layout is Already Being Used
 If you are using Custom Layout, the following section of the layout json can be placed under "advancedHeader" section in "agent" and "supervisorAgent" sections of your custom layout. You can look at the custom layout provided [here for reference.](DigitalOutboundDesktopLayout.json) <Upload the final layout on git>
