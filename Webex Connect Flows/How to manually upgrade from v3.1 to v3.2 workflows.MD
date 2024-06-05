@@ -12,7 +12,7 @@ In case you have made custom changes to your inbound flows, you can manually upg
 - Open the Queue Task node and upgrade it to the latest available version (v1.3), where you'll find a new field "Contact Priority".
 - Set the contact priority in the "Contact Priority" field if you want to prioritize the contact in the queue, otherwise it can be left empty.
 
-  <br><img width="800" alt="SetContactPriority" src="v3.2/images/SetContactPriority.png"><br>
+  ![SetContactPriority](v3.3/images/SetContactPriority.png)
 
-- Sample flow is present in [Usage Of Contact Priority in Flows](v3.2/Sample/Usage%20of%20Contact%20Priority%20In%20Flows/).
-- For more details refer to [Usage Of Contact Priority in Flows Readme](v3.2/Sample/Usage%20of%20Contact%20Priority%20In%20Flows/README.md).
+- Sample flow is present in [Usage Of Contact Priority in Flows](v3.3/Sample/Usage%20of%20Contact%20Priority%20In%20Flows/).
+- For more details refer to [Usage Of Contact Priority in Flows Readme](v3.3/Sample/Usage%20of%20Contact%20Priority%20In%20Flows/README.md).
