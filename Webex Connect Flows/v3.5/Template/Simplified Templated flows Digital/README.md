@@ -26,34 +26,34 @@ Flow Variables that need to be updated under Custom Variables for different chan
 
 - LiveChat :- appId and liveChatDomain
 
-  ![Live chat Settings](../../images/Settings.png)
+  ![Live chat Settings](images/Settings.png)
 
 - Facebook :- FBpageid and appid
 
-  ![Facebook Settings](../../images/Facebook.png)
+  ![Facebook Settings](images/Facebook.png)
 
 - Whatsapp :- WANumber and appid
 
-  ![Whatsapp Settings](../../images/Whatsapp.png)
+  ![Whatsapp Settings](images/Whatsapp.png)
 
 - Email :- bizemailid
 
-  ![Email Settings](../../images/Email.png)
+  ![Email Settings](images/Email.png)
 
 ### Live Chat Inbound Flow Details
 
 - In the Live Chat Flow, we need to select the template. For creation of template refer to https://help.imiconnect.io/docs/livechat-template
   Sample template is shown in below image
 
-  <br><img width="800" alt="Template" src="../../images/Template.png"><br>
+  <br><img width="800" alt="Template" src="images/Template.png"><br>
 
 - In the Live Chat/In App messaging node we have selected the message type as form and we have to choose the template from the dropdown which has the list of all the livechat templates available in that tenant
 
-  <br><img width="800" alt="formdropdown" src="../../images/formdropdown.png"><br>
+  <br><img width="800" alt="formdropdown" src="images/formdropdown.png"><br>
 
 - In this sample we have filled the template as LiveChatTemplate(the sample one shown in above image)
 
-  <br><img width="800" alt="Prechatform" src="../../images/Prechatform.png"><br>
+  <br><img width="800" alt="Prechatform" src="images/Prechatform.png"><br>
 
 - In the Receive node transition action we need to set the variable customerName and customerEmail and this customerName and customerEmail will
   be visible on the agent desktop.
@@ -65,14 +65,14 @@ Flow Variables that need to be updated under Custom Variables for different chan
 - For instance, if the form fields are named as UserName and UserEmail, the customerName and customerEmail variables must be set as `$(n2438.inappmessaging.formFields.UserName)` and
   `$(n2438.inappmessaging.formFields.UserEmail)` in the Receive node Transition Actions.
 
-  <br><img width="800" alt="Receive" src="../../images/Receive.png"><br>
+  <br><img width="800" alt="Receive" src="images/Receive.png"><br>
 
 ### Live Chat Close Flow Details
 
 - This flow is invoked when the live chat customer chooses to close the conversation by clicking on the "End chat" button in the chat widget.
-  <br><img width="800" alt="Live Chat Close flow Start node configuration" src="../../images/LiveChatCloseFlowStartNode.png"><br>
+  <br><img width="800" alt="Live Chat Close flow Start node configuration" src="images/LiveChatCloseFlowStartNode.png"><br>
 - AliasId is taken in from the Search Conversation response and passed on to the Close Task node as the task identifier, to terminate the task in the backend.
-  <br><img width="800" alt="Close Task Node" src="../../images/CloseTaskNodeInLiveChatCloseFlow.png"><br>
+  <br><img width="800" alt="Close Task Node" src="images/CloseTaskNodeInLiveChatCloseFlow.png"><br>
 
 ## Enhancements Included
 
