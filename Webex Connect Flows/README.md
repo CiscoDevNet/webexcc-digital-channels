@@ -82,4 +82,4 @@ In version 3.4 of workflows, enhancements to the flows allow for facilitating th
 
 #### Media Specific Flows:-
 
-- This folder contains media specific template flow for Live Chat Inbound Flow to support proactive chat messages
+- This folder contains a media-specific template flow for the Live Chat Inbound Flow to support proactive chat messages. It contains the email inbound flow with the latest version update and the remaining digital channels' simplified flows.

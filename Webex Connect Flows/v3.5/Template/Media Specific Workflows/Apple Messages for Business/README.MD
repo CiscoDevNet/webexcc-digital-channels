@@ -9,11 +9,11 @@
 
 - This workflow will be triggered for every inbound customer message from the Apple Messages app.
 - In addition to basic steps such as resolving a conversation and queuing it, this flow also has logic required to receive a message from the customer via a Receive node, process the attachments via an Evaluate node, and append it to the conversation via an Append Conversation node
-    - ![Receive Eval and Append Nodes](../images/AppleReceiveAndAppend.png)
+    - ![Receive Eval and Append Nodes](../../../images/AppleReceiveAndAppend.png)
     - This can be repeated wherever such a need arises, to accept messages from the customer via a Receive node in between a flow instead of a Start node at the beginning of a flow, and then to append it to the conversation
     - The Receive, Evaluate and Append Nodes described here and in the screenshot above can be removed if not needed as they are optional.
     - Note: When using the Append Conversation node for apple, make sure that you specify the `Extras` field with the `capabilityList` value from the receive node. This is needed to pass the capability list information of the customer device to the agent.
-      - ![Append Conversation Node](../images/AppleAppendConversationNode.png)
+      - ![Append Conversation Node](../../../images/AppleAppendConversationNode.png)
       - For further information on capabilityList please refer [this documentation](https://register.apple.com/resources/messages/msp-rest-api/channel-settings#device-capabilities)
 
 ## Overview of Apple Messages for Business inbound flow with form
@@ -41,7 +41,7 @@
 
 #### Step 2: Receiving the form response via the Receive node
 
-![AppleFormReceiveNode.png](../images/AppleFormReceiveNode.png)
+![AppleFormReceiveNode.png](../../../images/AppleFormReceiveNode.png)
 - Set a reasonable timeout for the node based on how long one might take to fill the form configured
 - Select "Receive Apple Messages for Business" as the event
 - Configure the "From" field as ```$(<startNodeId>.abc.abcUserId)```
@@ -56,7 +56,7 @@
 
 #### Step 4: Extracting the values in the form via the Evaluate Node
 
-![AppleFormEvalNode.png](../images/AppleFormEvalNode.png)
+![AppleFormEvalNode.png](../../../images/AppleFormEvalNode.png)
 - In this sample flow, the 3 fields presented in the form are being extracted in the Evaluate node with the below script. Similar script can be developed to extract any other fields configured by the flow admin
 - Add the below lines to the beginning of the script:
     ```
@@ -76,14 +76,14 @@
 
 #### Further steps
 
-![AppleFormFlowOverview.png](../images/AppleFormFlowOverview.png)
+![AppleFormFlowOverview.png](../../../images/AppleFormFlowOverview.png)
 - Rest of the flow continues as usual, Resolving the conversation, Queuing the task and so on
 - Optionally, the flow admin can choose to set variables for the fields extracted from the form and make them visible to / editable by the agent, using the Set Variable node. For further details on how to use this node, refer here - Webex Connect Flows/Sample/Usage of Set Variable In Flows/README.md
 - Note: If the customer name is made available through the form, the contact origin will be set as the name itself. This will be visible on the Agent's desktop and in reports as well. If the customer's name is not available, the userId will be used as the origin.
 
 ## Overview of Apple Messages for Business unsubscribe flow
 
-![AppleUnsubscribeFlow.png](../images/AppleUnsubscribeFlow.png)
+![AppleUnsubscribeFlow.png](../../../images/AppleUnsubscribeFlow.png)
 
 - This workflow will be triggered whenever a customer unsubscribes from the business's messages.
 - This flow takes care of closing the task associated with the conversation.
