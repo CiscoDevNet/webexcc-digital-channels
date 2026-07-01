@@ -6,6 +6,8 @@
 
 Email Attachment Evaluate node fix for avoid passing on message/rfc822 attachments to the Resolve conversation node limitation on Webex Connect's Email.
 
+Email inbound flow: Changes made to forward cid parameter to engage-api for inline image attachments
+
 ## v3.4
 
 #### Features released:
