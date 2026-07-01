@@ -4,13 +4,13 @@
 
 #### Features released:
 
-Email inbound flow: Evaluate changes made to avoid passing on message/rfc822 attachments to the Resolve conversation node as per documented limitation
+Email Attachment Evaluate node fix for avoid passing on message/rfc822 attachments to the Resolve conversation node limitation on Webex Connect's Email.
 
 ## v3.4
 
 #### Features released:
 
-Latest Node versions updated in flows
+Latest version nodes updated in flows
 
 ## v3.3
 
