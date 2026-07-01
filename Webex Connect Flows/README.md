@@ -89,3 +89,5 @@ In version 3.4 of workflows, enhancements to the flows allow for facilitating th
 #### Features released:
 
 Email inbound flow: Evaluate changes made to avoid passing on message/rfc822 attachments to the Resolve conversation node as per documented limitation
+
+Email inbound flow: Changes made to forward cid parameter to engage-api for inline image attachments
